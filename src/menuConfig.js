@@ -23,15 +23,6 @@ const asideMenuConfig = [
     ],
   },
   {
-    name: '文章管理',
-    path: '/post',
-    icon: 'copy',
-    children: [
-      { name: '文章列表', path: '/post/list' },
-      { name: '添加文章', path: '/post/create' },
-    ],
-  },
-  {
     name: '分类管理',
     path: '/cate',
     icon: 'cascades',
@@ -47,6 +38,15 @@ const asideMenuConfig = [
     children: [
       { name: '标签列表', path: '/tag/list' },
       { name: '添加标签', path: '/tag/create' },
+    ],
+  },
+  {
+    name: '文章管理',
+    path: '/post',
+    icon: 'copy',
+    children: [
+      { name: '文章列表', path: '/post/list' },
+      { name: '添加文章', path: '/post/create' },
     ],
   },
   {
