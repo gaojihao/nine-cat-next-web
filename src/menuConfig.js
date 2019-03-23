@@ -43,7 +43,7 @@ const asideMenuConfig = [
   {
     name: '课程管理',
     path: '/course',
-    icon: 'course',
+    icon: 'content',
     children: [
       { name: '课程列表', path: '/post/list' },
       { name: '课程管理', path: '/post/create' },
@@ -61,7 +61,7 @@ const asideMenuConfig = [
   {
     name: '音频管理',
     path: '/audio',
-    icon: 'audio',
+    icon: 'horn',
     children: [
       { name: '音频列表', path: '/post/list' },
       { name: '音频上传', path: '/post/create' },
@@ -89,9 +89,17 @@ const asideMenuConfig = [
   {
     name: '评论管理',
     path: '/comment',
-    icon: 'comment',
+    icon: 'chart',
     children: [
       { name: '评论列表', path: '/users/list' },
+    ],
+  },
+  {
+    name: '意见反馈',
+    path: '/feedback',
+    icon: 'message',
+    children: [
+      { name: '意见列表', path: '/users/list' },
     ],
   },
   {
