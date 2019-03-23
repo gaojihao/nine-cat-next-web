@@ -41,6 +41,33 @@ const asideMenuConfig = [
     ],
   },
   {
+    name: '课程管理',
+    path: '/course',
+    icon: 'course',
+    children: [
+      { name: '课程列表', path: '/post/list' },
+      { name: '课程管理', path: '/post/create' },
+    ],
+  },
+  {
+    name: '视频管理',
+    path: '/video',
+    icon: 'video',
+    children: [
+      { name: '文章列表', path: '/post/list' },
+      { name: '视频上传', path: '/post/create' },
+    ],
+  },
+  {
+    name: '音频管理',
+    path: '/audio',
+    icon: 'audio',
+    children: [
+      { name: '音频列表', path: '/post/list' },
+      { name: '音频上传', path: '/post/create' },
+    ],
+  },
+  {
     name: '文章管理',
     path: '/post',
     icon: 'copy',
@@ -57,6 +84,14 @@ const asideMenuConfig = [
       { name: '用户列表', path: '/users/list' },
       { name: '添加用户', path: '/users/create' },
       { name: '修改密码', path: '/users/pwd' },
+    ],
+  },
+  {
+    name: '评论管理',
+    path: '/comment',
+    icon: 'comment',
+    children: [
+      { name: '评论列表', path: '/users/list' },
     ],
   },
   {
