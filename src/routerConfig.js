@@ -17,6 +17,7 @@ import BasicSetting from './pages/BasicSetting';
 import NavigationSetting from './pages/NavigationSetting';
 import CourseList from './pages/CourseList';
 import CommentList from './pages/CommentList';
+import AudioList from './pages/AudioList';
 
 const routerConfig = [
   {
@@ -82,6 +83,10 @@ const routerConfig = [
   {
     path: '/comment/list',
     component: CommentList,
+  },
+  {
+    path: '/audio/list',
+    component: AudioList,
   },
 ];
 
