@@ -15,9 +15,17 @@ import CreateUser from './pages/CreateUser';
 import EditPassword from './pages/EditPassword';
 import BasicSetting from './pages/BasicSetting';
 import NavigationSetting from './pages/NavigationSetting';
+
+import CreateCourse from './pages/CreateCourse';
 import CourseList from './pages/CourseList';
-import CommentList from './pages/CommentList';
+import CreateAudio from './pages/CreateAudio';
 import AudioList from './pages/AudioList';
+import CreateVideo from './pages/CreateVideo';
+import VideoList from './pages/VideoList';
+import FeedBack from './pages/FeedBack';
+import FeedBackDetail from './pages/FeedBackDetail';
+import CommentList from './pages/CommentList';
+
 
 const routerConfig = [
   {
@@ -77,16 +85,40 @@ const routerConfig = [
     component: CreatePost,
   },
   {
+    path: '/course/create',
+    component: CreateCourse,
+  },
+  {
     path: '/course/list',
     component: CourseList,
+  },
+  {
+    path: '/audio/create',
+    component: CreateAudio,
+  },
+  {
+    path: '/audio/list',
+    component: AudioList,
   },
   {
     path: '/comment/list',
     component: CommentList,
   },
   {
-    path: '/audio/list',
-    component: AudioList,
+    path: '/video/create',
+    component: CreateVideo,
+  },
+  {
+    path: '/video/list',
+    component: VideoList,
+  },
+  {
+    path: '/feedback/list',
+    component: FeedBack,
+  },
+  {
+    path: '/feedback/detail',
+    component: FeedBackDetail,
   },
 ];
 
