@@ -16,6 +16,7 @@ import EditPassword from './pages/EditPassword';
 import BasicSetting from './pages/BasicSetting';
 import NavigationSetting from './pages/NavigationSetting';
 import CourseList from './pages/CourseList';
+import CommentList from './pages/CommentList';
 
 const routerConfig = [
   {
@@ -77,6 +78,10 @@ const routerConfig = [
   {
     path: '/course/list',
     component: CourseList,
+  },
+  {
+    path: '/comment/list',
+    component: CommentList,
   },
 ];
 

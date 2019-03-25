@@ -54,8 +54,8 @@ const asideMenuConfig = [
     path: '/video',
     icon: 'video',
     children: [
-      { name: '文章列表', path: '/post/list' },
-      { name: '视频上传', path: '/post/create' },
+      { name: '视频列表', path: '/video/list' },
+      { name: '视频上传', path: '/video/create' },
     ],
   },
   {
@@ -63,8 +63,8 @@ const asideMenuConfig = [
     path: '/audio',
     icon: 'horn',
     children: [
-      { name: '音频列表', path: '/post/list' },
-      { name: '音频上传', path: '/post/create' },
+      { name: '音频列表', path: '/audio/list' },
+      { name: '音频上传', path: '/audio/create' },
     ],
   },
   {
@@ -91,7 +91,7 @@ const asideMenuConfig = [
     path: '/comment',
     icon: 'chart',
     children: [
-      { name: '评论列表', path: '/users/list' },
+      { name: '评论列表', path: '/comment/list' },
     ],
   },
   {
@@ -99,7 +99,8 @@ const asideMenuConfig = [
     path: '/feedback',
     icon: 'message',
     children: [
-      { name: '意见列表', path: '/users/list' },
+      { name: '意见列表', path: '/feedback/list' },
+      { name: '意见详情', path: '/feedback/detail' },
     ],
   },
   {
