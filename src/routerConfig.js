@@ -15,6 +15,7 @@ import CreateUser from './pages/CreateUser';
 import EditPassword from './pages/EditPassword';
 import BasicSetting from './pages/BasicSetting';
 import NavigationSetting from './pages/NavigationSetting';
+import CourseList from './pages/CourseList';
 
 const routerConfig = [
   {
@@ -72,6 +73,10 @@ const routerConfig = [
   {
     path: '/post/create',
     component: CreatePost,
+  },
+  {
+    path: '/course/list',
+    component: CourseList,
   },
 ];
 

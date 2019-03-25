@@ -45,8 +45,8 @@ const asideMenuConfig = [
     path: '/course',
     icon: 'content',
     children: [
-      { name: '课程列表', path: '/post/list' },
-      { name: '课程管理', path: '/post/create' },
+      { name: '课程列表', path: '/course/list' },
+      { name: '课程管理', path: '/course/create' },
     ],
   },
   {
