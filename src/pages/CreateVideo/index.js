@@ -1,3 +1,3 @@
-import CreateVideo from './CreateCate';
+import CreateVideo from './CreateVideo';
 
 export default CreateVideo;

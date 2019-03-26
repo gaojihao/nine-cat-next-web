@@ -1,3 +1,3 @@
-import CreateCourse from './CreateCate';
+import CreateCourse from './CreateCourse';
 
 export default CreateCourse;
