@@ -16,7 +16,7 @@ export default class CreateCourse extends Component {
   render() {
     const breadcrumb = [
       { text: '课程管理', link: '' },
-      { text: '添加课程', link: '#/cate/list' },
+      { text: '添加课程', link: '#/course/create' },
     ];
     return (
       <div className="create-course-page">
