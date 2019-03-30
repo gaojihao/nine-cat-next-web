@@ -16,9 +16,9 @@ export default class VideoList extends Component {
       { text: '视频列表', link: '#/video/list' },
     ];
     return (
-      <div className="video-list-page">
+      <>
         <CustomBreadcrumb dataSource={breadcrumb} />
-      </div>
+      </>
     );
   }
 }
