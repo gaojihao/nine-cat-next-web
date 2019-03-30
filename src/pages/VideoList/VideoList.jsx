@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CustomBreadcrumb from '../../components/CustomBreadcrumb';
+import TabTable from './components/TabTable';
 import './VideoList.scss';
 
 export default class VideoList extends Component {
@@ -18,6 +19,7 @@ export default class VideoList extends Component {
     return (
       <>
         <CustomBreadcrumb dataSource={breadcrumb} />
+        <TabTable/>
       </>
     );
   }

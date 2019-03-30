@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import CustomBreadcrumb from '../../components/CustomBreadcrumb';
+import TabTable from './components/TabTable';
+
 import './AudioList.scss';
 
 export default class AudioList extends Component {
@@ -18,6 +20,7 @@ export default class AudioList extends Component {
     return (
       <div className="audio-list-page">
         <CustomBreadcrumb dataSource={breadcrumb} />
+        <TabTable/>
       </div>
     );
   }

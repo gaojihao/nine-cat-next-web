@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CustomBreadcrumb from '../../components/CustomBreadcrumb';
+import TabTable from './components/TabTable';
 
 import './FeedBack.scss';
 
@@ -19,6 +20,7 @@ export default class FeedBack extends Component {
     return (
       <div className="list-feedback-page">
         <CustomBreadcrumb dataSource={breadcrumb} />
+        <TabTable/>
       </div>
     );
   }

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import CustomBreadcrumb from '../../components/CustomBreadcrumb';
+import TabTable from './components/TabTable';
+
 import './CommentList.scss';
 
 export default class CommentList extends Component {
@@ -18,6 +20,7 @@ export default class CommentList extends Component {
     return (
       <div className="course-list-page">
         <CustomBreadcrumb dataSource={breadcrumb} />
+        <TabTable/>
       </div>
     );
   }
