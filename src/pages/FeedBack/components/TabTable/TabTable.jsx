@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import IceContainer from '@icedesign/container';
 import CustomTable from './components/CustomTable';
-import EditDialog from './components/EditDialog';
-import DeleteBalloon from './components/DeleteBalloon';
 
 const MOCK_DATA = [
   {
@@ -77,25 +75,6 @@ export default class TabTable extends Component {
         width: 150,
         dataIndex: 'articleNum',
         key: 'articleNum',
-      },
-      {
-        title: '操作',
-        key: 'action',
-        width: 150,
-        render: (value, index, record) => {
-          return (
-            <span>
-              <EditDialog
-                index={index}
-                record={record}
-                getFormValues={this.getFormValues}
-              />
-              <DeleteBalloon
-                handleRemove={() => this.handleRemove(value, index, record)}
-              />
-            </span>
-          );
-        },
       },
     ];
   }
