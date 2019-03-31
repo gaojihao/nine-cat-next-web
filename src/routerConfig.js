@@ -11,8 +11,6 @@ import CreateCate from './pages/CreateCate';
 import TagList from './pages/TagList';
 import CreateTag from './pages/CreateTag';
 import UserList from './pages/UserList';
-import CreateUser from './pages/CreateUser';
-import EditPassword from './pages/EditPassword';
 import CreateCourse from './pages/CreateCourse';
 import CourseList from './pages/CourseList';
 import CreateAudio from './pages/CreateAudio';
@@ -40,14 +38,6 @@ const routerConfig = [
   {
     path: '/users/list',
     component: UserList,
-  },
-  {
-    path: '/users/create',
-    component: CreateUser,
-  },
-  {
-    path: '/users/pwd',
-    component: EditPassword,
   },
   {
     path: '/tag/list',

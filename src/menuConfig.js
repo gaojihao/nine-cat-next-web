@@ -82,8 +82,6 @@ const asideMenuConfig = [
     icon: 'yonghu',
     children: [
       { name: '用户列表', path: '/users/list' },
-      { name: '添加用户', path: '/users/create' },
-      { name: '修改密码', path: '/users/pwd' },
     ],
   },
   {
