@@ -98,9 +98,6 @@ class UserLogin extends Component {
               >
                 登 录
               </Button>
-              <Link to="/user/register" style={styles.tips}>
-                立即注册
-              </Link>
             </div>
           </div>
         </IceFormBinderWrapper>

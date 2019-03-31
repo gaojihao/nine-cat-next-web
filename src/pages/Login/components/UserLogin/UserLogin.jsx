@@ -125,16 +125,6 @@ export default class UserLogin extends Component {
                     登 录
                   </Button>
                 </Row>
-
-                <Row className="tips" style={styles.tips}>
-                  <a href="/" style={styles.link}>
-                    立即注册
-                  </a>
-                  <span style={styles.line}>|</span>
-                  <a href="/" style={styles.link}>
-                    忘记密码
-                  </a>
-                </Row>
               </div>
             </IceFormBinderWrapper>
           </div>
