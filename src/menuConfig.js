@@ -103,18 +103,6 @@ const asideMenuConfig = [
       { name: '意见详情', path: '/feedback/detail' },
     ],
   },
-  {
-    name: '通用设置',
-    path: '/setting',
-    icon: 'shezhi',
-    children: [
-      { name: '基础设置', path: '/setting/basic' },
-      {
-        name: '菜单设置',
-        path: '/setting/navigation',
-      },
-    ],
-  },
 ];
 
 export { headerMenuConfig, asideMenuConfig };

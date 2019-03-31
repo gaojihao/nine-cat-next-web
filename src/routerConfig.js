@@ -13,9 +13,6 @@ import CreateTag from './pages/CreateTag';
 import UserList from './pages/UserList';
 import CreateUser from './pages/CreateUser';
 import EditPassword from './pages/EditPassword';
-import BasicSetting from './pages/BasicSetting';
-import NavigationSetting from './pages/NavigationSetting';
-
 import CreateCourse from './pages/CreateCourse';
 import CourseList from './pages/CourseList';
 import CreateAudio from './pages/CreateAudio';
@@ -39,14 +36,6 @@ const routerConfig = [
   {
     path: '/dashboard/monitor',
     component: Dashboard,
-  },
-  {
-    path: '/setting/basic',
-    component: BasicSetting,
-  },
-  {
-    path: '/setting/navigation',
-    component: NavigationSetting,
   },
   {
     path: '/users/list',
