@@ -14,7 +14,7 @@ const { Row, Col } = Grid;
 
 // 寻找背景图片可以从 https://unsplash.com/ 寻找
 const backgroundImage =
-  require('./images/TB1zsNhXTtYBeNjy1XdXXXXyVXa-2252-1500.png');
+  require('./images/aiony-haust-1050837-unsplash.jpg');
 
 @withRouter
 export default class UserLogin extends Component {
@@ -51,7 +51,6 @@ export default class UserLogin extends Component {
       console.log('values:', values);
       console.log(this.props);
       this.props.history.push('/');
-      // HashRouter.push('/');
     });
   };
 
