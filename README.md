@@ -24,3 +24,6 @@
 
 ## 效果图
 
+![](thumb/login_thumb.jpg)
+
+![](thumb/dashboard_thumb.jpg)

@@ -4,7 +4,7 @@ const LoginIntro = () => {
   return (
     <div style={styles.container}>
       <div style={styles.content}>
-        <div style={styles.title}>内容管理系统</div>
+        <div style={styles.title}>后台管理系统</div>
         <p style={styles.description}>运营与管控一体化的整合式服务平台</p>
         <p style={styles.description}>一起解构数字世界，碰撞科技创新思想</p>
       </div>
