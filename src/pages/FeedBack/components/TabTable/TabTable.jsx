@@ -102,7 +102,7 @@ export default class TabTable extends Component {
           <CustomTable
             dataSource={this.state.dataSource}
             columns={this.columns}
-            hasBorder={false}
+            hasBorder={true}
           />
         </IceContainer>
       </div>
