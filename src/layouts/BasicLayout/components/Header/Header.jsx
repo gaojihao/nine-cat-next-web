@@ -1,12 +1,11 @@
 /* eslint jsx-a11y/no-noninteractive-element-interactions:0 */
 import React, { PureComponent } from 'react';
-import { Balloon, Icon, Nav } from '@alifd/next';
+import { Balloon, Icon } from '@alifd/next';
 import IceImg from '@icedesign/img';
 import Layout from '@icedesign/layout';
 import FoundationSymbol from '@icedesign/foundation-symbol';
 import cx from 'classnames';
 import { Link } from 'react-router-dom';
-import { headerMenuConfig } from '../../../../menuConfig';
 import Logo from '../Logo';
 import './scss/base.scss';
 
@@ -22,43 +21,6 @@ export default class Header extends PureComponent {
         <Logo />
 
         <div className="ice-design-layout-header-menu">
-          {/* Header 菜单项 begin */}
-          {headerMenuConfig && headerMenuConfig.length > 0 ? (
-            <Nav direction="hoz" selectedKeys={[]}>
-              {headerMenuConfig.map((nav, idx) => {
-                const linkProps = {};
-                if (nav.newWindow) {
-                  linkProps.href = nav.path;
-                  linkProps.target = '_blank';
-                } else if (nav.external) {
-                  linkProps.href = nav.path;
-                } else {
-                  linkProps.to = nav.path;
-                }
-                return (
-                  <Nav.Item key={idx}>
-                    {linkProps.to ? (
-                      <Link {...linkProps}>
-                        {nav.icon ? (
-                          <FoundationSymbol type={nav.icon} size="small" />
-                        ) : null}
-                        <span className="ice-head-nav-text">{!isMobile ? nav.name : null}</span>
-                      </Link>
-                    ) : (
-                      <a {...linkProps}>
-                        {nav.icon ? (
-                          <FoundationSymbol type={nav.icon} size="small" />
-                        ) : null}
-                        <span className="ice-head-nav-text">{!isMobile ? nav.name : null}</span>
-                      </a>
-                    )}
-                  </Nav.Item>
-                );
-              })}
-            </Nav>
-          ) : null}
-          {/* Header 菜单项 end */}
-
           {/* Header 右侧内容块 */}
           <Balloon
             trigger={

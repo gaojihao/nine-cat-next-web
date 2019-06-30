@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Layout from '@icedesign/layout';
 import { withRouter } from 'react-router';
-
 import Header from './components/Header';
 import Aside from './components/Aside';
 import MainRoutes from './MainRoutes';
