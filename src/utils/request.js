@@ -25,6 +25,17 @@ ajax.interceptors.request.use(
 
 ajax.interceptors.response.use(
     response => {
+        const res = response.data;
+
+        if(response.status !== 200){
+            return Promise.reject('error')
+        }else{
+            if(res.code !== '200'){
+                return Promise.reject(res)
+            }
+
+            return res
+        }
 
     },error => {
         console.log(error);
