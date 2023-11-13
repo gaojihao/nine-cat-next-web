@@ -22,7 +22,7 @@
     "@icedesign/layout": "^1.x",
     "@icedesign/theme": "^0.1.2",
     "axios": "^1.6.0",
-    "bizcharts": "3.1.0",
+    "bizcharts": "4.1.23",
     "classnames": "^2.2.5",
     "enquire-js": "^0.1.2",
     "immutable": "^3.8.2",
