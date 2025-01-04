@@ -5,7 +5,9 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="flex min-h-full w-full flex-col">
-      <div className='fixed left-0 top-0 w-full h-16 shadow-lg z-50 bg-gray-100 opacity-80 px-6  backdrop-blur-sm'>
+      <div className='fixed left-0 top-0 w-full h-16 shadow-lg z-50 bg-gray-100 opacity-80 px-6 backdrop-blur-sm'>
+        <input type="checkbox" id="nav-toggle" className="hidden peer" />
+
         <div className='mx-auto flex flex-row justify-between items-center h-16'>
           <Link className='flex flex-row items-center text-[#111111] font-bold text-xl gap-1 hover:text-[#000000]' title='九猫' aria-label='九猫' href="/">
             <Image
@@ -18,8 +20,15 @@ export default function Home() {
             />
             <span>九猫</span>
           </Link>
-          <div className='flex flex-row items-center gap-6'>
-            {/* <a href="/app" className='text-[#111925] text-sm hover:text-[#000000]'>首页</a> */}
+
+          <label htmlFor="nav-toggle" className='lg:hidden cursor-pointer'>
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path className="peer-checked:hidden" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              <path className="hidden peer-checked:inline" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </label>
+
+          <div className='hidden lg:flex flex-row items-center gap-6'>
             <Link href="/#about" className='text-[#111925] text-sm hover:text-[#000000]'>和九猫合作</Link>
             <Link href="/#about" className='text-[#111925] text-sm hover:text-[#000000]'>我们的科技</Link>
             <Link href="/#about" className='text-[#111925] text-sm hover:text-[#000000]'>企业社会责任</Link>
@@ -27,7 +36,19 @@ export default function Home() {
             <Link href="/#about" className='text-[#111925] text-sm hover:text-[#000000]'>投资者关系</Link>
             <Link href="/#contact" className='text-[#111925] text-sm hover:text-[#000000]'>加入我们</Link>
           </div>
-          <Link href="/#contact" className='text-[#111925] text-sm hover:text-[#000000]'>下载和关注</Link>
+          <Link href="/#contact" className='hidden lg:block text-[#111925] text-sm hover:text-[#000000]'>下载和关注</Link>
+        </div>
+
+        <div className='hidden peer-checked:block lg:hidden absolute left-0 w-full bg-gray-100 shadow-lg'>
+          <div className='flex flex-col px-6 py-4 space-y-4'>
+            <Link href="/#about" className='text-[#111925] text-sm hover:text-[#000000]'>和九猫合作</Link>
+            <Link href="/#about" className='text-[#111925] text-sm hover:text-[#000000]'>我们的科技</Link>
+            <Link href="/#about" className='text-[#111925] text-sm hover:text-[#000000]'>企业社会责任</Link>
+            <Link href="/#about" className='text-[#111925] text-sm hover:text-[#000000]'>九猫公益</Link>
+            <Link href="/#about" className='text-[#111925] text-sm hover:text-[#000000]'>投资者关系</Link>
+            <Link href="/#contact" className='text-[#111925] text-sm hover:text-[#000000]'>加入我们</Link>
+            <Link href="/#contact" className='text-[#111925] text-sm hover:text-[#000000]'>下载和关注</Link>
+          </div>
         </div>
       </div>
       {/* banner展示 */}
