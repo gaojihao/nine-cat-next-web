@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 import { Carousel } from "antd";
 
@@ -9,14 +10,13 @@ export const Banner = () => {
         'https://static.e08trip.cn/upload/resource/1726714888/banner_maochumo.jpg'
     ];
     return (
-        <div style={{ width: '100%', height: '42.8vw' }}>
-            <Carousel autoplay style={{ height: '100%' }}>
+        <div style={{ width: '100vw', height: '42.8vw', position: 'relative' }}>
+            <Carousel autoplay style={{ height: '42.8vw' }}>
                 {bannerImages?.map(item => (
-                    <div key={item} style={{ width: '100vw', height: '42.8vw' }}>
+                    <div key={item} style={{ width: '100vw', height: '42.8vw', position: 'relative' }}>
                         <img alt="img" style={{ width: '100vw', height: '42.8vw', objectFit: 'cover' }} src={item} />
                     </div>
-                ))
-                }
+                ))}
             </Carousel>
         </div>
     )
