@@ -194,21 +194,21 @@ export default function Home() {
                       height: '40px',
                       lineHeight: '40px',
                       color: '#666',
-                    }} href='/pri.html'>隐私协议</a>
+                    }} href='/privacy?type=privacy'>隐私协议</a>
                   </li>
                   <li>
                     <a style={{
                       height: '40px',
                       lineHeight: '40px',
                       color: '#666',
-                    }} href='/user.html'>用户协议</a>
+                    }} href='/privacy?type=user'>用户协议</a>
                   </li>
                   <li>
                     <a style={{
                       height: '40px',
                       lineHeight: '40px',
                       color: '#666',
-                    }} href='/vendor.html'>第三方数据合作清单</a>
+                    }} href='/privacy?type=cooperation'>第三方数据合作清单</a>
                   </li>
                 </ul>
               </div>
@@ -242,7 +242,7 @@ export default function Home() {
                       height: '40px',
                       lineHeight: '40px',
                       color: '#666',
-                    }} href='/partner'>合伙人计划</a>
+                    }} href='/share/partner'>合伙人计划</a>
                   </li>
                 </ul>
               </div>
