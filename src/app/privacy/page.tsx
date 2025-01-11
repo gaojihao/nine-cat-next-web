@@ -1,3 +1,5 @@
+import './style.css';
+
 // 修改页面参数的类型定义
 type PageProps = {
     searchParams: Promise<{ type?: string }>;
@@ -14,7 +16,7 @@ export default async function PrivacyPage({ searchParams }: PageProps) {
 
     return (
         <div style={{ padding: '1rem' }}>
-            <div dangerouslySetInnerHTML={{ __html: data ?? '' }}>
+            <div className="html-body" dangerouslySetInnerHTML={{ __html: data ?? '' }}>
             </div>
         </div>
     )
