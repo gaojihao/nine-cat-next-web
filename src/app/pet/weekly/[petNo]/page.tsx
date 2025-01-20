@@ -6,7 +6,7 @@ export default async function Page({
     params: Promise<{ petNo: string }>
 }) {
     const petNo = (await params).petNo
-    const response = await fetch(`https://e08trip.cn//api/pet/queryPetWeeklyReport?petNo=${petNo}`);
+    const response = await fetch(`https://e08trip.cn/api/pet/queryPetWeeklyReport?petNo=${petNo}`);
     const { data } = await response.json();
 
     return (
