@@ -1,4 +1,4 @@
-// File: /Users/upuphone/Desktop/github/nine-cat-next-web/src/app/pet/weekly/[petNo]/page.tsx
+// File: /Users/fanhui/github/nine-cat-next-web/src/app/pet/weekly/[petNo]/page.tsx
 import * as entry from '../../../../../../src/app/pet/weekly/[petNo]/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

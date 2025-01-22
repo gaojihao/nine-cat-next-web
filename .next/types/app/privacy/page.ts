@@ -1,4 +1,4 @@
-// File: /Users/upuphone/Desktop/github/nine-cat-next-web/src/app/privacy/page.tsx
+// File: /Users/fanhui/github/nine-cat-next-web/src/app/privacy/page.tsx
 import * as entry from '../../../../src/app/privacy/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

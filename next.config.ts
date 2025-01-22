@@ -7,6 +7,14 @@ const nextConfig: NextConfig = {
   /* config options here */
   images: {
     domains: ['static.e08trip.cn'],
+  },
+  rewrites: async () => {
+    return [
+      {
+        source: '/api/:path*',
+        destination: 'https://e08trip.cn/api/:path*',
+      },
+    ];
   }
 };
 
