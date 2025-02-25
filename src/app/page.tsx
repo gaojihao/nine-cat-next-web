@@ -1,4 +1,5 @@
 import { Banner } from "@/components/Banner";
+import { Photo } from "@/components/Photo";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -119,10 +120,10 @@ export default function Home() {
           priority
         />
       </div>
-      {/* <div id='news'></div>
-      <div className='mx-auto max-w-7xl p-4 sm:px-6 lg:px-8'>
-        <News />
-      </div> */}
+      <div id='news'></div>
+      <div className='mx-auto w-full max-w-7xl p-4 sm:px-6 lg:px-8'>
+        <Photo />
+      </div>
       {/* 关于我们 */}
       {/* 添加/#about的锚点 */}
       <div id='about'></div>
