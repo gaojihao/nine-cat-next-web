@@ -39,3 +39,37 @@
     overflow: hidden;
     font-weight: 500;
 }
+
+.left {
+    background-image: linear-gradient(to right, #FFA800, #FF434E);
+    display: flex;
+    width: 60%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 35px;
+    color: white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    min-width: 120px
+}
+
+.right {
+    width: 40%;
+    background-image: linear-gradient(to right, #AA00FF, #2557FE);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 35px;
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    min-width: 120px
+}

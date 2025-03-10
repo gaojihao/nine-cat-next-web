@@ -32,9 +32,9 @@ export default async function PK() {
                         alt="File icon"
                         width={150}
                         height={150}
-                        className='w-40 h-40 rounded'
+                        className='w-40 h-40 rounded-lg'
                     />
-                    <div className="mt-1 line-clamp-1"><span>选项一</span></div>
+                    <div className="mt-1 line-clamp-1"><span>PK选项一</span></div>
                 </div>
                 <div>
                     <Image
@@ -43,9 +43,37 @@ export default async function PK() {
                         alt="File icon"
                         width={150}
                         height={150}
-                        className='w-40 h-40 rounded'
+                        className='w-40 h-40 rounded-lg'
                     />
-                    <div className="mt-1 line-clamp-1 text-right"><span>选项二</span></div>
+                    <div className="mt-1 line-clamp-1 text-right"><span>PK选项二</span></div>
+                </div>
+            </div>
+            <div className="flex flex-row items-center justify-between w-full">
+                <div className="left">
+                    <span>60
+                        <span className="font-normal">%</span>
+                    </span>
+                    <Image
+                        aria-hidden
+                        src="/icon_p.png"
+                        alt="File icon"
+                        width={21}
+                        height={21}
+                        className='w-6 h-6'
+                    />
+                </div>
+                <div className="right">
+                    <Image
+                        aria-hidden
+                        src="/icon_k.png"
+                        alt="File icon"
+                        width={21}
+                        height={21}
+                        className='w-6 h-6'
+                    />
+                    <span>40
+                        <span className="font-normal">%</span>
+                    </span>
                 </div>
             </div>
         </div>
