@@ -1,0 +1,53 @@
+import Image from "next/image";
+import './style.css';
+
+// 修改页面参数的类型定义
+// type PageProps = {
+//     searchParams: Promise<{ type?: string }>;
+// };
+
+// 修改页面组件的定义
+export default async function PK() {
+    // 获取 URL query 参数 type，默认为 user
+    // const type = (await searchParams).type || 'user';
+
+    return (
+        <div className='pk-container'>
+            <div className='pk-header'>
+                <div className='pk-header-title'>
+                    <span>PK</span>
+                </div>
+            </div>
+            <div className='pk-header-description'>
+                <span>这是一段PK的描述</span>
+            </div>
+            <button className='pk-download'>
+                <span>下载</span>
+            </button>
+            <div className="flex flex-row items-center justify-between w-full text-xs font-bold text-[#FFFFFF] mb-1 gap-1 ">
+                <div>
+                    <Image
+                        aria-hidden
+                        src="/logo.png"
+                        alt="File icon"
+                        width={150}
+                        height={150}
+                        className='w-40 h-40 rounded'
+                    />
+                    <div className="mt-1 line-clamp-1"><span>选项一</span></div>
+                </div>
+                <div>
+                    <Image
+                        aria-hidden
+                        src="/logo.png"
+                        alt="File icon"
+                        width={150}
+                        height={150}
+                        className='w-40 h-40 rounded'
+                    />
+                    <div className="mt-1 line-clamp-1 text-right"><span>选项二</span></div>
+                </div>
+            </div>
+        </div>
+    )
+}
