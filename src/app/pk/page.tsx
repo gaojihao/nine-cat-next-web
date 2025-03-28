@@ -1,3 +1,4 @@
+import TencentAd from "@/components/TencentAd";
 import Image from "next/image";
 import './style.css';
 
@@ -76,6 +77,13 @@ export default async function PK() {
                     </span>
                 </div>
             </div>
+            <TencentAd
+                appId="1210753373"
+                placementId="5185723796142936"
+                containerId="tencent-ad-container"
+                type="native"
+                count={1}
+            />
         </div>
     )
 }
