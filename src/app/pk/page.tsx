@@ -1,6 +1,9 @@
-import TencentAd from "@/components/TencentAd";
+// import TencentAd from "@/components/TencentAd";
+'use client';
+import dynamic from 'next/dynamic';
 import Image from "next/image";
 import './style.css';
+const TencentAd = dynamic(() => import('@/components/TencentAd'), { ssr: false });
 
 // 修改页面参数的类型定义
 // type PageProps = {
@@ -8,7 +11,7 @@ import './style.css';
 // };
 
 // 修改页面组件的定义
-export default async function PK() {
+export default function PK() {
     // 获取 URL query 参数 type，默认为 user
     // const type = (await searchParams).type || 'user';
 

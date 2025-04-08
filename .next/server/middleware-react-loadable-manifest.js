@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{}";
+self.__REACT_LOADABLE_MANIFEST='{"app/pk/page.tsx -> @/components/TencentAd":{"id":3828,"files":["static/chunks/828.644374bfad60b2f0.js"]}}';

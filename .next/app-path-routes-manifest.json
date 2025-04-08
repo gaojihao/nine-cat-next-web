@@ -1,14 +1,14 @@
 {
   "/_not-found/page": "/_not-found",
   "/favicon.ico/route": "/favicon.ico",
-  "/news/[newsNo]/page": "/news/[newsNo]",
-  "/page": "/",
-  "/app/page": "/app",
+  "/news/list/page": "/news/list",
+  "/activity/[activityNo]/page": "/activity/[activityNo]",
   "/pet/weekly/[petNo]/page": "/pet/weekly/[petNo]",
-  "/privacy/page": "/privacy",
+  "/app/page": "/app",
   "/pk/page": "/pk",
   "/share/introduction/page": "/share/introduction",
-  "/activity/[activityNo]/page": "/activity/[activityNo]",
-  "/news/list/page": "/news/list",
-  "/share/partner/page": "/share/partner"
+  "/share/partner/page": "/share/partner",
+  "/news/[newsNo]/page": "/news/[newsNo]",
+  "/privacy/page": "/privacy",
+  "/page": "/"
 }
