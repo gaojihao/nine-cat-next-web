@@ -1,1 +1,122 @@
-{"version":3,"pages404":true,"caseSensitive":false,"basePath":"","redirects":[{"source":"/:path+/","destination":"/:path+","internal":true,"statusCode":308,"regex":"^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"}],"headers":[],"dynamicRoutes":[{"page":"/activity/[activityNo]","regex":"^/activity/([^/]+?)(?:/)?$","routeKeys":{"nxtPactivityNo":"nxtPactivityNo"},"namedRegex":"^/activity/(?<nxtPactivityNo>[^/]+?)(?:/)?$"},{"page":"/news/[newsNo]","regex":"^/news/([^/]+?)(?:/)?$","routeKeys":{"nxtPnewsNo":"nxtPnewsNo"},"namedRegex":"^/news/(?<nxtPnewsNo>[^/]+?)(?:/)?$"},{"page":"/pet/weekly/[petNo]","regex":"^/pet/weekly/([^/]+?)(?:/)?$","routeKeys":{"nxtPpetNo":"nxtPpetNo"},"namedRegex":"^/pet/weekly/(?<nxtPpetNo>[^/]+?)(?:/)?$"}],"staticRoutes":[{"page":"/","regex":"^/(?:/)?$","routeKeys":{},"namedRegex":"^/(?:/)?$"},{"page":"/_not-found","regex":"^/_not\\-found(?:/)?$","routeKeys":{},"namedRegex":"^/_not\\-found(?:/)?$"},{"page":"/app","regex":"^/app(?:/)?$","routeKeys":{},"namedRegex":"^/app(?:/)?$"},{"page":"/favicon.ico","regex":"^/favicon\\.ico(?:/)?$","routeKeys":{},"namedRegex":"^/favicon\\.ico(?:/)?$"},{"page":"/news/list","regex":"^/news/list(?:/)?$","routeKeys":{},"namedRegex":"^/news/list(?:/)?$"},{"page":"/pk","regex":"^/pk(?:/)?$","routeKeys":{},"namedRegex":"^/pk(?:/)?$"},{"page":"/privacy","regex":"^/privacy(?:/)?$","routeKeys":{},"namedRegex":"^/privacy(?:/)?$"},{"page":"/share/introduction","regex":"^/share/introduction(?:/)?$","routeKeys":{},"namedRegex":"^/share/introduction(?:/)?$"},{"page":"/share/partner","regex":"^/share/partner(?:/)?$","routeKeys":{},"namedRegex":"^/share/partner(?:/)?$"}],"dataRoutes":[],"rsc":{"header":"RSC","varyHeader":"RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch","prefetchHeader":"Next-Router-Prefetch","didPostponeHeader":"x-nextjs-postponed","contentTypeHeader":"text/x-component","suffix":".rsc","prefetchSuffix":".prefetch.rsc"},"rewrites":[{"source":"/api/:path*","destination":"https://e08trip.cn/api/:path*","regex":"^/api(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))?(?:/)?$"}]}
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "dynamicRoutes": [
+    {
+      "page": "/activity/[activityNo]",
+      "regex": "^/activity/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPactivityNo": "nxtPactivityNo"
+      },
+      "namedRegex": "^/activity/(?<nxtPactivityNo>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/news/[newsNo]",
+      "regex": "^/news/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPnewsNo": "nxtPnewsNo"
+      },
+      "namedRegex": "^/news/(?<nxtPnewsNo>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/pet/weekly/[petNo]",
+      "regex": "^/pet/weekly/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPpetNo": "nxtPpetNo"
+      },
+      "namedRegex": "^/pet/weekly/(?<nxtPpetNo>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/app",
+      "regex": "^/app(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/app(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/news/list",
+      "regex": "^/news/list(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/news/list(?:/)?$"
+    },
+    {
+      "page": "/pk",
+      "regex": "^/pk(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/pk(?:/)?$"
+    },
+    {
+      "page": "/privacy",
+      "regex": "^/privacy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/privacy(?:/)?$"
+    },
+    {
+      "page": "/share/introduction",
+      "regex": "^/share/introduction(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/share/introduction(?:/)?$"
+    },
+    {
+      "page": "/share/partner",
+      "regex": "^/share/partner(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/share/partner(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "RSC",
+    "varyHeader": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+    "prefetchHeader": "Next-Router-Prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "Next-Router-Segment-Prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  },
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://e08trip.cn/api/:path*",
+      "regex": "^/api(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))?(?:/)?$"
+    }
+  ]
+}

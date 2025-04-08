@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
   },
   /* config options here */
   images: {
-    domains: ['static.e08trip.cn', 'qzs.qq.com'],
+    domains: ['static.e08trip.cn', 'qzs.qq.com', 'qzs.gdtimg.com'],
   },
   rewrites: async () => {
     return [

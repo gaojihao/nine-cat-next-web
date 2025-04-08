@@ -93,7 +93,7 @@ const TencentAd: React.FC<TencentAdProps> = ({
         <>
             <Script
                 id="tencent-gdt-script"
-                src="//qzs.qq.com/qzone/biz/res/i.js"
+                src="https://qzs.gdtimg.com/union/res/union_sdk/page/h5_sdk/i.js"
                 strategy="beforeInteractive"
                 onLoad={() => {
                     if (typeof window !== 'undefined') {

@@ -4,11 +4,11 @@
   "/news/[newsNo]/page": "app/news/[newsNo]/page.js",
   "/page": "app/page.js",
   "/app/page": "app/app/page.js",
-  "/activity/[activityNo]/page": "app/activity/[activityNo]/page.js",
-  "/pk/page": "app/pk/page.js",
-  "/news/list/page": "app/news/list/page.js",
-  "/share/partner/page": "app/share/partner/page.js",
+  "/pet/weekly/[petNo]/page": "app/pet/weekly/[petNo]/page.js",
   "/privacy/page": "app/privacy/page.js",
+  "/pk/page": "app/pk/page.js",
   "/share/introduction/page": "app/share/introduction/page.js",
-  "/pet/weekly/[petNo]/page": "app/pet/weekly/[petNo]/page.js"
+  "/activity/[activityNo]/page": "app/activity/[activityNo]/page.js",
+  "/news/list/page": "app/news/list/page.js",
+  "/share/partner/page": "app/share/partner/page.js"
 }

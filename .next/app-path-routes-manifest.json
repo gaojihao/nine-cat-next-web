@@ -1,1 +1,14 @@
-{"/_not-found/page":"/_not-found","/favicon.ico/route":"/favicon.ico","/news/[newsNo]/page":"/news/[newsNo]","/page":"/","/app/page":"/app","/activity/[activityNo]/page":"/activity/[activityNo]","/pk/page":"/pk","/news/list/page":"/news/list","/share/partner/page":"/share/partner","/privacy/page":"/privacy","/share/introduction/page":"/share/introduction","/pet/weekly/[petNo]/page":"/pet/weekly/[petNo]"}
+{
+  "/_not-found/page": "/_not-found",
+  "/favicon.ico/route": "/favicon.ico",
+  "/news/[newsNo]/page": "/news/[newsNo]",
+  "/page": "/",
+  "/app/page": "/app",
+  "/pet/weekly/[petNo]/page": "/pet/weekly/[petNo]",
+  "/privacy/page": "/privacy",
+  "/pk/page": "/pk",
+  "/share/introduction/page": "/share/introduction",
+  "/activity/[activityNo]/page": "/activity/[activityNo]",
+  "/news/list/page": "/news/list",
+  "/share/partner/page": "/share/partner"
+}
