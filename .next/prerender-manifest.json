@@ -1,7 +1,7 @@
 {
   "version": 4,
   "routes": {
-    "/share/introduction": {
+    "/app": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -14,8 +14,32 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/share/introduction",
-      "dataRoute": "/share/introduction.rsc",
+      "srcRoute": "/app",
+      "dataRoute": "/app.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/",
+      "dataRoute": "/index.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -73,30 +97,6 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/",
-      "dataRoute": "/index.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/favicon.ico": {
       "initialHeaders": {
         "cache-control": "public, max-age=0, must-revalidate",
@@ -126,7 +126,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/app": {
+    "/share/introduction": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -139,8 +139,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/app",
-      "dataRoute": "/app.rsc",
+      "srcRoute": "/share/introduction",
+      "dataRoute": "/share/introduction.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -154,8 +154,8 @@
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "1651721495915eab046e207eb38723db",
-    "previewModeSigningKey": "0a84fda3abb4698e352831dc1a93df6f79d0c38b5f790be5063fd61a5cf7642f",
-    "previewModeEncryptionKey": "ee5f644fbcbadcdff4dcbf2802e2c5f3144113acbf5b04cff4d24fa184cfe81e"
+    "previewModeId": "bbe34b7a3cb4c72867606e5d07f7e547",
+    "previewModeSigningKey": "5058ff1ba24bc3382f35d644da55fc02d86530622e817e8f85b319d6b9ca227e",
+    "previewModeEncryptionKey": "0bb72f8b4a2b0ed38a8516295a52f54c5a1d7a0c818296572f26224685aa0548"
   }
 }

@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST='{"app/pk/page.tsx -> @/components/TencentAd":{"id":3828,"files":["static/chunks/828.a94e41b5235d3688.js"]}}';
+self.__REACT_LOADABLE_MANIFEST='{"app/pk/page.tsx -> @/components/TencentAd":{"id":3828,"files":["static/chunks/828.c04f2fdc8a2ea705.js"]}}';

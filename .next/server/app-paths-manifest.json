@@ -1,14 +1,14 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/activity/[activityNo]/page": "app/activity/[activityNo]/page.js",
-  "/news/[newsNo]/page": "app/news/[newsNo]/page.js",
-  "/page": "app/page.js",
-  "/pet/weekly/[petNo]/page": "app/pet/weekly/[petNo]/page.js",
   "/app/page": "app/app/page.js",
-  "/share/introduction/page": "app/share/introduction/page.js",
-  "/privacy/page": "app/privacy/page.js",
   "/news/list/page": "app/news/list/page.js",
+  "/pet/weekly/[petNo]/page": "app/pet/weekly/[petNo]/page.js",
+  "/pk/page": "app/pk/page.js",
+  "/page": "app/page.js",
+  "/news/[newsNo]/page": "app/news/[newsNo]/page.js",
   "/share/partner/page": "app/share/partner/page.js",
-  "/pk/page": "app/pk/page.js"
+  "/share/introduction/page": "app/share/introduction/page.js",
+  "/activity/[activityNo]/page": "app/activity/[activityNo]/page.js",
+  "/privacy/page": "app/privacy/page.js"
 }

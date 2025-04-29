@@ -107,7 +107,7 @@ const TencentAd: React.FC<TencentAdProps> = ({
                     height={150}
                     className='w-40 h-40 rounded-lg'
                 />
-                <div id="tencent-ad-left-container" className='rounded-lg absolute inset-0 overflow-hidden'>
+                <div id="tencent-ad-left-container" className='w-40 h-40 rounded-lg absolute left-0 top-0 overflow-hidden'>
 
                 </div>
             </div>
@@ -120,7 +120,7 @@ const TencentAd: React.FC<TencentAdProps> = ({
                     height={150}
                     className='w-40 h-40 rounded-lg'
                 />
-                <div id="tencent-ad-right-container" className='w-40 h-40 rounded-lg absolute inset-0 overflow-hidden'>
+                <div id="tencent-ad-right-container" className='w-40 h-40 rounded-lg absolute left-0 top-0 overflow-hidden'>
 
                 </div>
             </div>
