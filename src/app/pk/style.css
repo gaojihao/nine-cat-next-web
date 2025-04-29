@@ -30,6 +30,9 @@
 }
 
 .pk-download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 180px;
     height: 35px;
     border-radius: 18px;
