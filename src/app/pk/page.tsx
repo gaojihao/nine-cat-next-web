@@ -19,39 +19,21 @@ export default function PK() {
         <div className='pk-container'>
             <div className='pk-header'>
                 <div className='pk-header-title'>
-                    <span>PK</span>
+                    <span>助力出道，由你掌握</span>
                 </div>
             </div>
             <div className='pk-header-description'>
-                <span>这是一段PK的描述</span>
+                <span>家人们，咱的广告超有创意！动动手指投一票，助力它 C 位出道，感谢大家支持～</span>
             </div>
             <button className='pk-download'>
                 <span>下载</span>
             </button>
-            <div className="flex flex-row items-center justify-between w-full text-xs font-bold text-[#FFFFFF] mb-1 gap-1 ">
-                <div>
-                    <Image
-                        aria-hidden
-                        src="/logo.png"
-                        alt="File icon"
-                        width={150}
-                        height={150}
-                        className='w-40 h-40 rounded-lg'
-                    />
-                    <div className="mt-1 line-clamp-1"><span>PK选项一</span></div>
-                </div>
-                <div>
-                    <Image
-                        aria-hidden
-                        src="/logo.png"
-                        alt="File icon"
-                        width={150}
-                        height={150}
-                        className='w-40 h-40 rounded-lg'
-                    />
-                    <div className="mt-1 line-clamp-1 text-right"><span>PK选项二</span></div>
-                </div>
-            </div>
+            <TencentAd
+                appId="1210753373"
+                placementId="5185723796142936"
+                type="native"
+                count={2}
+            />
             <div className="flex flex-row items-center justify-between w-full">
                 <div className="left">
                     <span>60
@@ -80,13 +62,14 @@ export default function PK() {
                     </span>
                 </div>
             </div>
-            <TencentAd
-                appId="1210753373"
-                placementId="5185723796142936"
-                containerId="tencent-ad-container"
-                type="native"
-                count={1}
-            />
+            <div className="flex flex-row items-center justify-between w-full text-xs font-bold text-[#FFFFFF] mb-1 gap-1 ">
+                <div className='w-1/2 flex flex-row items-center  justify-center bg-gradient-to-r from-violet-500 to-fuchsia-500 py-2 rounded-md'>
+                    <div className="mt-1 line-clamp-1"><span>投票给TA</span></div>
+                </div>
+                <div className='w-1/2 flex flex-row items-center  justify-center bg-gradient-to-r from-sky-500 to-indigo-500 py-2 rounded-md'>
+                    <div className="mt-1 line-clamp-1"><span>投票给TA</span></div>
+                </div>
+            </div>
         </div>
     )
 }

@@ -1,11 +1,11 @@
 'use client';
 
+import Image from "next/image";
 import { useEffect, useRef } from 'react';
 
 interface TencentAdProps {
     appId: string;
     placementId: string;
-    containerId: string;
     type?: 'native' | 'banner' | 'interstitial';
     count?: number;
 }
@@ -27,9 +27,8 @@ declare global {
 const TencentAd: React.FC<TencentAdProps> = ({
     appId,
     placementId,
-    containerId,
     type = 'native',
-    count = 1,
+    count = 2,
 }) => {
     // 使用 useRef 来保存初始化状态
     const initialized = useRef(false);
@@ -73,7 +72,8 @@ const TencentAd: React.FC<TencentAdProps> = ({
                                 if (res && Array.isArray(res)) {
                                     try {
                                         // 渲染广告
-                                        window.TencentGDT.NATIVE.renderAd(res[0], containerId);
+                                        window.TencentGDT.NATIVE.renderAd(res[0], 'tencent-ad-left-container');
+                                        window.TencentGDT.NATIVE.renderAd(res[1], 'tencent-ad-right-container');
                                     } catch (error) {
                                         console.error('Failed to render ad:', error);
                                     }
@@ -94,12 +94,37 @@ const TencentAd: React.FC<TencentAdProps> = ({
         if (window.TencentGDT) {
             initAd();
         }
-    }, [appId, placementId, containerId, type, count]);
+    }, [appId, placementId, type, count]);
 
     return (
-        <>
-            <div style={{ width: '100%', height: '80px' }} id={containerId}></div>
-        </>
+        <div className="flex flex-row items-center justify-between w-full">
+            <div className="relative overflow-hidden">
+                <Image
+                    aria-hidden
+                    src="/place.png"
+                    alt="File icon"
+                    width={150}
+                    height={150}
+                    className='w-40 h-40 rounded-lg'
+                />
+                <div id="tencent-ad-left-container" className='w-40 h-40 rounded-lg absolute top-0 left-0 overflow-hidden'>
+
+                </div>
+            </div>
+            <div className="relative overflow-hidden">
+                <Image
+                    aria-hidden
+                    src="/place.png"
+                    alt="File icon"
+                    width={150}
+                    height={150}
+                    className='w-40 h-40 rounded-lg'
+                />
+                <div id="tencent-ad-right-container" className='w-40 h-40 rounded-lg absolute top-0 left-0 overflow-hidden'>
+
+                </div>
+            </div>
+        </div>
     );
 };
 
