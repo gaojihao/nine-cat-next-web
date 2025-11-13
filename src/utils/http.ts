@@ -1,4 +1,4 @@
-import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
+import axios, { AxiosResponse } from 'axios';
 
 interface IServerData<T> {
     code: number;
@@ -40,6 +40,3 @@ http.interceptors.response.use(
 
 export const HttpGet = <T>(url: string, params?: unknown) =>
     http.get<IServerData<T>>(url, { params }).then((resp) => resp.data.data);
-
-export const HttpPost = <T>(url: string, data?: unknown, config?: AxiosRequestConfig) =>
-    http.post<IServerData<T>>(url, data, config).then((resp) => resp.data.data);
