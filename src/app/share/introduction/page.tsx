@@ -13,14 +13,13 @@ export default async function Page() {
     const appInfo = rows[0];
     return (
         <div className="bg-black">
-            <div className="mx-auto max-w-2xl overflow-scroll bg-black">
+            <div className="relative w-full h-screen bg-black">
                 <Image
                     src="/introduct.jpg"
                     alt="File icon"
-                    width={0}
-                    height={0}
+                    fill
                     sizes="100vw"
-                    className='w-full h-full'
+                    className='object-cover'
                     priority
                 />
             </div>

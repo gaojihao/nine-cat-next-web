@@ -1,5 +1,7 @@
 /* [project]/src/app/globals.css [app-client] (css) */
-*, :before, :after {
+*,
+:before,
+:after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -107,16 +109,20 @@
   --tw-contain-style: ;
 }
 
-*, :before, :after {
+*,
+:before,
+:after {
   box-sizing: border-box;
   border: 0 solid #e5e7eb;
 }
 
-:before, :after {
+:before,
+:after {
   --tw-content: "";
 }
 
-html, :host {
+html,
+:host {
   -webkit-text-size-adjust: 100%;
   -moz-tab-size: 4;
   tab-size: 4;
@@ -143,7 +149,12 @@ abbr:where([title]) {
   text-decoration: underline dotted;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit;
   font-weight: inherit;
 }
@@ -154,11 +165,15 @@ a {
   text-decoration: inherit;
 }
 
-b, strong {
+b,
+strong {
   font-weight: bolder;
 }
 
-code, kbd, samp, pre {
+code,
+kbd,
+samp,
+pre {
   font-feature-settings: normal;
   font-variation-settings: normal;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
@@ -169,7 +184,8 @@ small {
   font-size: 80%;
 }
 
-sub, sup {
+sub,
+sup {
   vertical-align: baseline;
   font-size: 75%;
   line-height: 0;
@@ -190,7 +206,11 @@ table {
   border-collapse: collapse;
 }
 
-button, input, optgroup, select, textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
   font-feature-settings: inherit;
   font-variation-settings: inherit;
   font-family: inherit;
@@ -203,7 +223,8 @@ button, input, optgroup, select, textarea {
   padding: 0;
 }
 
-button, select {
+button,
+select {
   text-transform: none;
 }
 
@@ -269,7 +290,19 @@ summary {
   display: list-item;
 }
 
-blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
   margin: 0;
 }
 
@@ -282,7 +315,9 @@ legend {
   padding: 0;
 }
 
-ol, ul, menu {
+ol,
+ul,
+menu {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -296,12 +331,14 @@ textarea {
   resize: vertical;
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   opacity: 1;
   color: #9ca3af;
 }
 
-button, [role="button"] {
+button,
+[role="button"] {
   cursor: pointer;
 }
 
@@ -309,12 +346,20 @@ button, [role="button"] {
   cursor: default;
 }
 
-img, svg, video, canvas, audio, iframe, embed, object {
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
   vertical-align: middle;
   display: block;
 }
 
-img, video {
+img,
+video {
   max-width: 100%;
   height: auto;
 }
@@ -453,6 +498,10 @@ img, video {
   height: 100%;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .min-h-full {
   min-height: 100%;
 }
@@ -565,7 +614,7 @@ img, video {
   gap: 1.5rem;
 }
 
-.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+.space-y-4> :not([hidden])~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
@@ -892,10 +941,14 @@ body {
 }
 
 .download-full {
-  background-color: rgba(20, 20, 20, .45);
+  padding-bottom: 40px;
+  /* 渐变背景 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .0), rgba(0, 0, 0, 1));
   flex-direction: column;
   align-items: center;
-  height: 23%;
+  justify-content: flex-end;
+  height: 80%;
+  gap: 10px;
   display: flex;
   position: absolute;
   bottom: 0;
@@ -931,15 +984,15 @@ body {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-ring-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-shadow);
 }
 
-.peer:checked ~ .peer-checked\:block {
+.peer:checked~.peer-checked\:block {
   display: block;
 }
 
-.peer:checked ~ .peer-checked\:inline {
+.peer:checked~.peer-checked\:inline {
   display: inline;
 }
 
-.peer:checked ~ .peer-checked\:hidden {
+.peer:checked~.peer-checked\:hidden {
   display: none;
 }
 
