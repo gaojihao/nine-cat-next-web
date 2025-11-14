@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 13, "column": 0}, "map": {"version":3,"sources":["file:///Users/fanhui/github/nine-cat-next-web/src/components/share/partner/Wechat.tsx"],"sourcesContent":["'use client'\nexport default function Wechat() {\n    const inWechat = typeof window !== 'undefined' && window.navigator.userAgent.toLowerCase().match(/MicroMessenger/i)?.includes('micromessenger')\n    if (inWechat) {\n        return (\n            <p style={{\n                fontSize: '16px',\n                textAlign: 'center',\n                marginTop: '30px',\n                color: 'rgba(0, 0, 0, 0.4)'\n            }}>\n                点击右上方 <span style={{ color: '#000000' }}>...</span> 选择在浏览器打开\n            </p>\n        )\n    }\n    return null\n\n}"],"names":[],"mappings":";;;;AAAA;;AACe,SAAS;IACpB,MAAM,WAAW,gBAAkB,eAAe,OAAO,SAAS,CAAC,SAAS,CAAC,WAAW,GAAG,KAAK,CAAC,oBAAoB,SAAS;IAC9H;;IAYA,OAAO;AAEX","debugId":null}}]
-}
